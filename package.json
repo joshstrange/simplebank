@@ -1,0 +1,22 @@
+{
+  "name": "simple",
+  "version": "0.0.1",
+  "description": "A very basic interface to fetch data from your Simple bank account using promises",
+  "main": "index.js",
+  "dependencies": {
+    "q": "~1.0.0",
+    "request": "~2.34.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "simple",
+    "simplebank",
+    "banking",
+    "bank"
+  ],
+  "author": "Josh Strange",
+  "license": "ISC"
+}
