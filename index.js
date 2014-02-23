@@ -6,9 +6,7 @@ function SimpleBank(username, password) {
 	self.username = username;
 	self.password = password;
 	self.cookies = request.jar();
-	self.headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.64 Safari/537.4'
-    };
+
     self.urls = {
     	Transactions: 'https://bank.simple.com/transactions/data',
     	Balances: 'https://bank.simple.com/account/balances',
@@ -31,7 +29,6 @@ function SimpleBank(username, password) {
 				username: self.username,
 				password: self.password
 			},
-			headers: self.headers,
 			jar: self.cookies
 		}, function(error, response) {
 			if(error) {
@@ -49,11 +46,10 @@ function SimpleBank(username, password) {
 		var deferred = Q.defer();
 		request({
 			url: url,
-			headers: self.headers,
 			jar: self.cookies
 		}, function (error, response, body) {
 		  if (!error && response.statusCode == 200) {
-		    deferred.resolve(body);
+		    deferred.resolve(JSON.parse(body));
 		  } else {
 			deferred.reject(new Error(error));
 		  }
