@@ -1,6 +1,6 @@
 {
   "name": "simplebank",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A very basic interface to fetch data from your Simple bank account using promises",
   "main": "index.js",
   "dependencies": {
