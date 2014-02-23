@@ -1,13 +1,20 @@
-# Simple 
+# SimpleBank
 ## A very basic interface to fetch data from your Simple bank account using promises
+
+
+### Install
+
+````
+npm install simplebank
+````
 
 
 ### Example
 
 ````js
-var Simple = require('simple');
+var SimpleBank = require('simplebank');
 
-var mySimple = Simple('username', 'password');
+var mySimple = Simplebank('username', 'password');
 
 mySimple.getTransactions().then(function(transactions){
 	console.log(transactions);

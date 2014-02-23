@@ -1,5 +1,5 @@
 {
-  "name": "simple",
+  "name": "simplebank",
   "version": "0.0.1",
   "description": "A very basic interface to fetch data from your Simple bank account using promises",
   "main": "index.js",
@@ -18,5 +18,9 @@
     "bank"
   ],
   "author": "Josh Strange",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshstrange/simplebank.git"
+  },
 }

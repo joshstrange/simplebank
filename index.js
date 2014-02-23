@@ -1,7 +1,7 @@
 var request = require('request');
 var Q = require('q');
 
-function Simple(username, password) {
+function SimpleBank(username, password) {
 	var self = this;
 	self.username = username;
 	self.password = password;
@@ -101,4 +101,4 @@ function Simple(username, password) {
 	return self;
 }
 
-module.exports = Simple
+module.exports = SimpleBank
